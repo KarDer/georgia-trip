@@ -1,0 +1,628 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Египет!?</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d6dc549a-56c3-410d-9060-66f17ef1164e" class="page sans"><header><h1 class="page-title">Египет!?</h1></header><div class="page-body"><p id="f0d2c719-deb9-4f3e-8a8e-91fbde78f3dd" class="">Карантин, ночь, заснеженный Киев, прекрасное время начать отпуск. В путь!</p><p id="39703c1c-3c6d-4c46-a461-cb313d68d857" class="">На взлет...</p><p id="835b7409-a690-4be5-ad24-17ef54ce0fe7" class="">Самолет чуть подледенел</p><figure id="a24d6588-84e1-4980-bf10-3358c7b494c9" class="image"><a href="media/egypt-31-01-2021/IMG_0025.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0025.jpg"/></a></figure><p id="b3475a44-0b77-4d64-8937-e11f6895ee99" class="">Пастбище такси возле аэропорта</p><figure id="ca1de781-252c-4559-9eb1-7db42fcf46a0" class="image"><a href="media/egypt-31-01-2021/IMG_0029.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0029.jpg"/></a></figure><p id="d3ec13bc-856a-4fd2-9f7f-a2089098205a" class="">Первые фото пустыни из окна автобуса</p><figure id="c4fdeb07-8c16-455d-a68e-7e08226ab552" class="image"><a href="media/egypt-31-01-2021/IMG_0033.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0033.jpg"/></a></figure><figure id="e0bd0fe1-709e-4b89-bb4a-82e6a3110507" class="image"><a href="media/egypt-31-01-2021/IMG_0034.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0034.jpg"/></a></figure><figure id="dc5ed584-2e32-48a9-9a80-42c80c43e662" class="image"><a href="media/egypt-31-01-2021/IMG_0036.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0036.jpg"/></a></figure><figure id="668097d3-135b-4753-8085-d7fe41fb5a4f" class="image"><a href="media/egypt-31-01-2021/IMG_0040.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0040.jpg"/></a></figure><p id="1000574d-c085-44ed-bb33-67c28f74b0a6" class="">Вот мы и в номере</p><p id="37b05220-8d5e-4afa-a69f-ab79e56353fa" class="">Это наш балкон</p><figure id="967506e9-1d0f-4ed2-ae5d-b1697df96f77" class="image"><a href="media/egypt-31-01-2021/IMG_0043.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0043.jpg"/></a></figure><p id="f6b07200-83ce-4b7d-aacb-128371296cf5" class="">И вид с балкона</p><figure id="a94e3d93-29cf-4b93-bbcd-e521dadbe9bf" class="image"><a href="media/egypt-31-01-2021/IMG_0044.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0044.jpg"/></a></figure><p id="61b165a7-68ae-430a-a6d7-adeff7e2c1c6" class="">Это наш номер</p><figure id="b33e749f-9fc5-45a0-a8b3-c27a09cd6b56" class="image"><a href="media/egypt-31-01-2021/IMG_0045.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0045.jpg"/></a></figure><p id="dd95cd0a-cdc0-4d9c-9358-1813c1c75822" class="">Далее погнали чуть прогуляемся по территории отеля</p><p id="caac50aa-a183-43aa-86cf-5662d1ac0b97" class="">И вон там маленькая беленькая &quot;цыпа&quot; 🙂</p><figure id="c243a912-1965-4abe-9fae-dd49f71c5326" class="image"><a href="media/egypt-31-01-2021/IMG_0049.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0049.jpg"/></a></figure><p id="1c5ce0c0-203a-4ee4-bd5c-a7f4264d6fed" class="">И снова цыпа гуляет</p><figure id="ac081f6e-bb02-4f83-8ae9-46dab341c910" class="image"><a href="media/egypt-31-01-2021/IMG_0050.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0050.jpg"/></a></figure><p id="4e24e60a-ad1e-4719-bfe2-bb8d6f1f3651" class="">Стены из цветов</p><figure id="2ca3505e-860f-4c34-b044-d67449863256" class="image"><a href="media/egypt-31-01-2021/IMG_0051.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0051.jpg"/></a></figure><p id="fde39ccb-d2a1-46a6-bc00-6d2e3f11b5d4" class="">Это вход в холл отеля</p><figure id="09e4047e-99be-4377-b344-b83642be208b" class="image"><a href="media/egypt-31-01-2021/IMG_0055.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0055.jpg"/></a></figure><figure id="3b6ea9e5-20ec-42bd-ab8d-6e1d0aca4654" class="image"><a href="media/egypt-31-01-2021/IMG_0057.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0057.jpg"/></a></figure><p id="e74a1ebb-8d7e-4c63-ad27-a5430e17a2a2" class="">Все домики на территории отеля вот такого вида, 2 этажа с балконами, с зеленью по стене и огромными окнами</p><figure id="e1516489-ac38-4bd4-9c6f-03321bf4f6b0" class="image"><a href="media/egypt-31-01-2021/IMG_0058.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0058.jpg"/></a></figure><p id="4525f743-3426-437d-8f81-7a32788be14b" class="">Бассейн, бассейн, бассейн, ну и там еще бассейн и сзади бассейн</p><figure id="1ef2a1eb-3699-488a-a5a6-23acbe8471d0" class="image"><a href="media/egypt-31-01-2021/IMG_0062.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0062.jpg"/></a></figure><p id="b74263b1-b6a8-4ef3-b057-e6afc3cd95b0" class="">А это пляжный выход к морю</p><figure id="55dca566-76a0-48b6-85e3-1772ad7e9e8d" class="image"><a href="media/egypt-31-01-2021/IMG_0115.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0115.jpg"/></a></figure><p id="c8059146-c0c8-4ff7-892d-96bb522a4c0e" class="">Эта вся территория, весь пляж, все принадлежит отелю</p><figure id="16304415-22c1-41b4-b72d-7dfe28d2f66d" class="image"><a href="media/egypt-31-01-2021/IMG_0116.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0116.jpg"/></a></figure><figure id="c90ebe51-17ef-42b2-9efd-e03f0c6323ea" class="image"><a href="media/egypt-31-01-2021/IMG_0118.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0118.jpg"/></a></figure><p id="76d042b9-1632-4ae2-ba0f-e5d7fae1c19b" class="">На территории разные уровни ландшафта, дорожки между домами, по которым можно ходить гулять хоть весь вечер</p><figure id="dc4c20dd-c9a3-405f-90d2-65ea16e09065" class="image"><a href="media/egypt-31-01-2021/IMG_0119.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0119.jpg"/></a></figure><p id="1916f8ae-2ec6-4d99-b66a-6f97c39ab4be" class="">Вся территория покрыта цветами, кактусами, пальмами и еще кучей растительности</p><figure id="15cd801d-3aba-4ad1-b819-f630cd3ccfe0" class="image"><a href="media/egypt-31-01-2021/IMG_0122.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0122.jpg"/></a></figure><p id="cee93ff8-a801-4fbd-a0d4-84995963b707" class="">Небольшой водопад</p><figure id="e2ac0cce-818d-46ec-95e5-9ed1a65f4249" class="image"><a href="media/egypt-31-01-2021/IMG_0125.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0125.jpg"/></a></figure><p id="6971fddd-ba3c-411d-88e1-e53c86e5ddf7" class="">На этом фото показана вся территория отеля, можете прикинуть размеры домов и их количество, а так же бассейны и территория пляжа. Мы жили в самом левом краю в здании C2. Самое дальнее здание от моря</p><figure id="5c7c6152-23a2-4175-91cb-cd6754e26f93" class="image"><a href="media/egypt-31-01-2021/IMG_0128.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0128.jpg"/></a></figure><p id="e2245ae2-246e-4657-8d72-a33c07b880d1" class="">Импровезированый амфитеатр </p><figure id="b4eb715f-b95d-4327-b677-6324fa79cdac" class="image"><a href="media/egypt-31-01-2021/IMG_0131.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0131.jpg"/></a></figure><figure id="8b64ba39-5e73-47ba-8025-42ab3664f2ff" class="image"><a href="media/egypt-31-01-2021/IMG_0132.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0132.jpg"/></a></figure><figure id="d7987a95-92fd-4df8-a3cc-c5bd5532be56" class="image"><a href="media/egypt-31-01-2021/IMG_0133.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0133.jpg"/></a></figure><figure id="a022721d-466e-4978-bd4c-b619c4cf2f77" class="image"><a href="media/egypt-31-01-2021/IMG_0136.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0136.jpg"/></a></figure><figure id="90a60795-7543-477c-91b0-45735f6f8c6c" class="image"><a href="media/egypt-31-01-2021/IMG_0152.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0152.jpg"/></a></figure><p id="86e95aac-9b18-4c40-b901-82d553cd764a" class="">Это холл отеля</p><figure id="12db9f6a-ddfd-4dff-9106-9ea57e57ac33" class="image"><a href="media/egypt-31-01-2021/IMG_0167.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0167.jpg"/></a></figure><p id="6acbfb4e-7ba0-4059-abd9-735fb0232d09" class="">Ночная подсветка бассейнов </p><figure id="b6412990-ff8b-4e98-b116-fa04ce942cd0" class="image"><a href="media/egypt-31-01-2021/IMG_0168.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0168.jpg"/></a></figure><p id="a1979867-4e2b-462f-b63a-4817c50a39e7" class="">Ночное море, только луна подсвечивает его</p><figure id="c67e26bd-6ca4-4a06-983b-1c5bff1e6767" class="image"><a href="media/egypt-31-01-2021/IMG_0169.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0169.jpg"/></a></figure><p id="f4e718f2-20ff-49cf-bc25-eb949b507860" class="">И это тоже холл отеля</p><figure id="a247285e-6e39-458b-8012-aee575b96472" class="image"><a href="media/egypt-31-01-2021/IMG_0172.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0172.jpg"/></a></figure><p id="11225ee8-df6f-4978-a2fa-f1605773d80c" class="">А это река-бассейн, просто по территории отеля идет, можно лечь на матрас и плыть просто по реке-бассейну</p><figure id="d367f9f2-b314-47f9-aa13-254f5afc777c" class="image"><a href="media/egypt-31-01-2021/IMG_0173.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0173.jpg"/></a></figure><figure id="af739926-a5bc-47bf-bbb3-90b16ae909fc" class="image"><a href="media/egypt-31-01-2021/IMG_0186.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0186.jpg"/></a></figure><figure id="0e0e17cd-579d-4448-a78a-3f0b146ff5dd" class="image"><a href="media/egypt-31-01-2021/IMG_0190.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0190.jpg"/></a></figure><p id="8b48b285-c5cc-491c-9212-e60098b02fe1" class="">А это потолок в холле отеля </p><figure id="6a75b863-bc01-49da-b1c5-0c87c1c7f237" class="image"><a href="media/egypt-31-01-2021/IMG_0208.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0208.jpg"/></a></figure><p id="c76b3cec-eb9b-4ec3-9eea-5c81698550b7" class="">Тут мы вышли погулять и пофоткали заброшеные отели, не выдержали пандемию</p><figure id="6559235f-6b1d-4600-96aa-79c5cd5263d0" class="image"><a href="media/egypt-31-01-2021/IMG_0212.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0212.jpg"/></a></figure><figure id="e141cbb4-0146-4bf0-bff4-fcfb4822cf0a" class="image"><a href="media/egypt-31-01-2021/IMG_0213.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0213.jpg"/></a></figure><figure id="38cdb16c-b8bb-4b6b-bc07-652edd2ee57b" class="image"><a href="media/egypt-31-01-2021/IMG_0214.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0214.jpg"/></a></figure><figure id="d083cdeb-2bc5-4c62-a9d1-8113479ef6fe" class="image"><a href="media/egypt-31-01-2021/IMG_0217.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0217.jpg"/></a></figure><p id="a5cffd59-5d2d-4524-bdd4-412f3b18202a" class="">Это выход к морю уже в самом городе</p><figure id="d64c387d-c8be-43e9-a7cb-29d0a240a485" class="image"><a href="media/egypt-31-01-2021/IMG_0239.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0239.jpg"/></a></figure><p id="948219b3-c5e5-4e07-b906-947a3e02a953" class="">А это очень прикольная кафешка, прямо в скале</p><figure id="2aad4139-ddb3-4324-affc-ccbca4cc014e" class="image"><a href="media/egypt-31-01-2021/IMG_0246.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0246.jpg"/></a></figure><figure id="8cb98451-f64b-411a-9968-eb50324dc4da" class="image"><a href="media/egypt-31-01-2021/IMG_0255.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0255.jpg"/></a></figure><p id="b709489d-2ec9-440f-9a28-2ed48f632091" class="">Коктейли из свежевыжатого сока</p><figure id="437a0e20-187d-4417-a021-e3e385ce3b4f" class="image"><a href="media/egypt-31-01-2021/IMG_0256.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0256.jpg"/></a></figure><p id="38af8a79-0d31-4dc8-9aa6-3c6cca030ea8" class="">Вот на таких лежанках сидели, там прям разуваются люди и залазят на них с ногами</p><figure id="dcd04dda-eb9b-4d95-be16-27fd344f5840" class="image"><a href="media/egypt-31-01-2021/IMG_0301.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0301.jpg"/></a></figure><p id="b57fa6d1-05e4-418b-84e4-a45cdad721fc" class="">А это вечерняя площадка в отеле, где играет легкая музыка, берут напитки на баре и сидят общаются</p><figure id="1cb12388-b1f3-4ed9-940d-389a3f38d36c" class="image"><a href="media/egypt-31-01-2021/IMG_0317.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0317.jpg"/></a></figure><p id="39d90f23-9f25-4e7f-a8d9-d0a764075f13" class="">Далее мы поехали на экскурсию по пустыни</p><figure id="cc85f6f1-d67d-4489-bb09-45aa52b3313c" class="image"><a href="media/egypt-31-01-2021/IMG_0331.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0331.jpg"/></a></figure><figure id="4a73a733-d81b-452a-be35-08997b6552fb" class="image"><a href="media/egypt-31-01-2021/IMG_0335.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0335.jpg"/></a></figure><figure id="9feb2e1b-1010-4721-a609-830b4ed0c3a0" class="image"><a href="media/egypt-31-01-2021/IMG_0336.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0336.jpg"/></a></figure><p id="e8120784-29b8-41a3-9ba0-16e1b77f452e" class="">Бидуины натуральные </p><figure id="d94051eb-81f9-4cf9-8cd7-b47ea2319817" class="image"><a href="media/egypt-31-01-2021/IMG_0337.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0337.jpg"/></a></figure><p id="71e20976-c029-497d-8d95-ef4e28961740" class="">Гоним к следующей точке</p><figure id="1169e23d-c890-4c6e-bfb9-fbe4cbb62fa6" class="image"><a href="media/egypt-31-01-2021/IMG_0347.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0347.jpg"/></a></figure><figure id="5a41f018-81eb-4e3b-82f1-f8709d4ed1ef" class="image"><a href="media/egypt-31-01-2021/IMG_0358.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0358.jpg"/></a></figure><figure id="e3354d61-5850-4fba-bbff-8ba94044910c" class="image"><a href="media/egypt-31-01-2021/IMG_0374.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0374.jpg"/></a></figure><figure id="53fb1463-c5b6-43c8-a8eb-da279087ad3a" class="image"><a href="media/egypt-31-01-2021/IMG_0377.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0377.jpg"/></a></figure><figure id="4965e69a-69f2-4192-8b2d-f11b39408a5c" class="image"><a href="media/egypt-31-01-2021/IMG_0389.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0389.jpg"/></a></figure><p id="5490570e-c3c3-4e16-8087-c80cc11ec23b" class="">На этом джипе мы гоняли по пустыне</p><figure id="7ab91651-83ce-4947-9526-2be5df0a1136" class="image"><a href="media/egypt-31-01-2021/IMG_0391.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0391.jpg"/></a></figure><figure id="02f5e352-6cfa-4466-922b-97d036e20529" class="image"><a href="media/egypt-31-01-2021/IMG_0430.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0430.jpg"/></a></figure><figure id="d27e01f9-2c4c-440d-ab7c-60c648020dde" class="image"><a href="media/egypt-31-01-2021/IMG_0442.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0442.jpg"/></a></figure><figure id="d582af57-de1d-48ab-a1c0-e88a73b90988" class="image"><a href="media/egypt-31-01-2021/IMG_0477.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0477.jpg"/></a></figure><figure id="6109166e-1f2e-43bd-900c-63af35134ba6" class="image"><a href="media/egypt-31-01-2021/IMG_0478.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0478.jpg"/></a></figure><figure id="542b4f2d-dc9f-4ac3-9589-61653b36b014" class="image"><a href="media/egypt-31-01-2021/IMG_0482.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0482.jpg"/></a></figure><figure id="5e5587b1-50d4-49dd-b4e4-3eec24556937" class="image"><a href="media/egypt-31-01-2021/IMG_0490.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0490.jpg"/></a></figure><p id="cab51482-5c37-471a-bcfe-fca82b96820a" class="">А вот и верблюдик на котором катались</p><figure id="7b7a3404-8002-4115-b15c-0afc61b4b69c" class="image"><a href="media/egypt-31-01-2021/IMG_0521.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0521.jpg"/></a></figure><p id="92a180d9-dabb-422a-9cdf-dd955e76cc42" class="">Улыбается и позирует</p><figure id="c924892a-04ad-491a-9d14-5d6d9fede464" class="image"><a href="media/egypt-31-01-2021/IMG_0528.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0528.jpg"/></a></figure><p id="0a0ae0fd-a052-4a7b-9452-f04d80559e80" class="">А вот и море</p><figure id="956c2602-5fb4-4050-a05e-124e0124e62f" class="image"><a href="media/egypt-31-01-2021/IMG_0572.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0572.jpg"/></a></figure><figure id="30947b56-c76c-40c4-b5e0-cf078fadefbe" class="image"><a href="media/egypt-31-01-2021/IMG_0579.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0579.jpg"/></a></figure><p id="912bf824-79a2-44a3-90de-8775fce6f4fc" class="">А тут мы выехали в другую часть города погулять</p><figure id="19b3035a-98bf-4c49-93ff-0827db02ef3f" class="image"><a href="media/egypt-31-01-2021/IMG_0638.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0638.jpg"/></a></figure><figure id="333d7eca-71c8-4f85-a334-af1c10239f87" class="image"><a href="media/egypt-31-01-2021/IMG_0662.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0662.jpg"/></a></figure><figure id="a8aa0440-ce9e-4019-8a13-78c967c44aba" class="image"><a href="media/egypt-31-01-2021/IMG_0663.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0663.jpg"/></a></figure><figure id="044974f2-4cf5-42b6-8e15-a13c0318a636" class="image"><a href="media/egypt-31-01-2021/IMG_0664.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0664.jpg"/></a></figure><figure id="ab63e71b-b506-4fea-862a-b9542f1f2b1f" class="image"><a href="media/egypt-31-01-2021/IMG_0675.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0675.jpg"/></a></figure><figure id="80b914e2-f47b-4ecc-ae86-cbd5b1c27ebf" class="image"><a href="media/egypt-31-01-2021/IMG_0676.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0676.jpg"/></a></figure><figure id="cb9e4676-935c-4256-8103-2db92e53738c" class="image"><a href="media/egypt-31-01-2021/IMG_0678.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0678.jpg"/></a></figure><figure id="b38873de-e5cc-47fa-8b62-5b93ad19eb85" class="image"><a href="media/egypt-31-01-2021/IMG_0683.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0683.jpg"/></a></figure><figure id="f8c2d03a-2946-472f-b922-e4844e748b4d" class="image"><a href="media/egypt-31-01-2021/IMG_0685.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0685.jpg"/></a></figure><figure id="5bc5cc87-048a-4851-8e96-cbb063178230" class="image"><a href="media/egypt-31-01-2021/IMG_0688.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0688.jpg"/></a></figure><figure id="4a113a6f-c47e-437e-8727-98ce82df613b" class="image"><a href="media/egypt-31-01-2021/IMG_0694.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0694.jpg"/></a></figure><p id="09a89534-f741-489b-b23f-90815748bd9d" class="">Одно из красивых блюд</p><figure id="5499377d-a188-4533-97a4-7cfb28b5c261" class="image"><a href="media/egypt-31-01-2021/IMG_0776.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0776.jpg"/></a></figure><p id="a9c5f228-0170-4b6c-a2b6-e8f487f8dfdc" class="">Это еще раз вышли погулять по городу, это раскладка открыток возле брошенного магазина</p><figure id="9151ce07-4eb1-429b-8026-23aad1c56a3c" class="image"><a href="media/egypt-31-01-2021/IMG_0786.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0786.jpg"/></a></figure><p id="68494605-1406-459f-873e-2023587fc1c1" class="">Очень странные панда-свиньи 😂</p><figure id="d0ea99fc-2d93-4158-a4eb-560a564dc639" class="image"><a href="media/egypt-31-01-2021/IMG_0787.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0787.jpg"/></a></figure><p id="0ee906d7-c45d-46a0-b03a-b016e2215ff3" class="">Это в центре города мечеть, самая красивая в том месте и оооочень огромная</p><figure id="9ad20b37-d1e9-4219-885c-fc7f5b33e821" class="image"><a href="media/egypt-31-01-2021/IMG_0790.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0790.jpg"/></a></figure><p id="3918b77e-3f61-4fef-8b05-dec17ecfc24c" class="">Тут можно увидеть последствия дождя, глину прям в магазин замывало. Нам повезло застать дождь в Египте, который бывает единичными случаями в году, а такого сильного уже десятилетия не было</p><figure id="12e9e1a9-3e8f-4e23-af19-33c37d6441cc" class="image"><a href="media/egypt-31-01-2021/IMG_0804.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0804.jpg"/></a></figure><figure id="79b2c3f4-299c-42f0-8329-0fe043120fac" class="image"><a href="media/egypt-31-01-2021/IMG_0827.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0827.jpg"/></a></figure><p id="e28357ec-ddca-4aac-8a39-16acb0b1673f" class="">Еще несколько блюд</p><figure id="ac748ed0-12f4-4ce8-87a4-e7fd7aa09134" class="image"><a href="media/egypt-31-01-2021/IMG_0834.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0834.jpg"/></a></figure><figure id="23f656ba-9348-4113-8d9d-aaabd03b01a3" class="image"><a href="media/egypt-31-01-2021/IMG_0835.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0835.jpg"/></a></figure><figure id="be08182c-79b7-4ff4-b082-6b29dde5362b" class="image"><a href="media/egypt-31-01-2021/IMG_0838.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0838.jpg"/></a></figure><figure id="be536e68-c741-4862-91ac-8fd9b6f23308" class="image"><a href="media/egypt-31-01-2021/IMG_0839.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0839.jpg"/></a></figure><p id="1dc067a5-1afe-4bff-8951-45b0628274e3" class="">Погнали в Каир, так себе видок, вот вообще не захотелось тут оставаться и гулять</p><figure id="442f78b6-6df6-49a6-bc1b-f17d63301515" class="image"><a href="media/egypt-31-01-2021/IMG_0860.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0860.jpg"/></a></figure><figure id="c46dbf25-3064-4375-afc9-6a8c99877edd" class="image"><a href="media/egypt-31-01-2021/IMG_0864.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0864.jpg"/></a></figure><figure id="9d7df8b6-fbba-453c-a0d7-22cbb5848fda" class="image"><a href="media/egypt-31-01-2021/IMG_0865.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0865.jpg"/></a></figure><p id="0af4a1b3-9cf9-4fcb-8fb8-c6053e0292f5" class="">Ну да ладно, погнали в их главный музей с настоящими мумиями и другой атрибутикой из пирамид</p><figure id="803fb5fc-871e-4a98-b5c5-48c221999d01" class="image"><a href="media/egypt-31-01-2021/IMG_0869.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0869.jpg"/></a></figure><p id="fcfb48cc-6f8e-4c72-a08a-1b379cc4b1e6" class="">Саркофагов там просто тьма, на любой вкус и размер</p><figure id="db60a9a3-9c97-4b10-8564-ea18cefa3dae" class="image"><a href="media/egypt-31-01-2021/IMG_0883.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0883.jpg"/></a></figure><figure id="5d66b0ec-b018-439f-ba39-353aaa950db0" class="image"><a href="media/egypt-31-01-2021/IMG_0887.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0887.jpg"/></a></figure><p id="88d58879-1848-4dfb-8b55-04dee66a5020" class="">Письменность</p><figure id="93973303-312c-47dc-b750-82d561111162" class="image"><a href="media/egypt-31-01-2021/IMG_0906.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0906.jpg"/></a></figure><figure id="c74799f0-8105-46aa-899c-e063acdae0ed" class="image"><a href="media/egypt-31-01-2021/IMG_0909.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0909.jpg"/></a></figure><p id="555f6505-f9e2-459e-ae14-b56489b99d8a" class="">А это один из 3х саркофагов, который стаял внутри другого, а тот внутри еще одного, а уже там была мумия и другая атрибутика для загробной жизни</p><figure id="29af0567-cdfd-4763-86e8-6494d2cd6f62" class="image"><a href="media/egypt-31-01-2021/IMG_0913.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0913.jpg"/></a></figure><p id="e1c3fe27-be73-4620-9e10-7450332f8f44" class="">Раньше умели делать гробы</p><figure id="fcf84ec5-e489-4a06-856c-412e6c911d98" class="image"><a href="media/egypt-31-01-2021/IMG_0930.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0930.jpg"/></a></figure><p id="1b4d0fd0-e939-4684-80c8-c62bbb34951f" class="">А вот и натуральная мумия</p><figure id="906afe99-2c6d-43ee-bc10-4c8077e0e2f5" class="image"><a href="media/egypt-31-01-2021/IMG_0931.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0931.jpg"/></a></figure><p id="c933e51e-699d-4581-b50d-2e93c1b09cfc" class="">Стульчики и подушка из все тех же мест захоронения, для загробной жизни не пригодились, но зато нам теперь красиво смотреть</p><figure id="90270a02-1968-44ac-ab9e-34d289b585cb" class="image"><a href="media/egypt-31-01-2021/IMG_0940.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0940.jpg"/></a></figure><p id="52312782-bf5c-4252-a2c6-ef9fc9938ddd" class="">А вот еще матрешка</p><figure id="50da466e-08b0-4e0d-8868-fdb8e667a11c" class="image"><a href="media/egypt-31-01-2021/IMG_0947.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0947.jpg"/></a></figure><p id="15462c6c-a4c3-4f54-b7b5-2d260a89c9f4" class="">Это памятник основателю музея и главным инвесторам</p><figure id="3400f7a7-961e-42f3-b7cd-d296f4d353d2" class="image"><a href="media/egypt-31-01-2021/IMG_0953.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0953.jpg"/></a></figure><p id="fbe8ac62-3feb-4224-a1c3-a536ef52b72c" class="">Еще пару фоток города</p><figure id="a3eb6fff-bb9c-4ef1-8555-9dc14ae2bf97" class="image"><a href="media/egypt-31-01-2021/IMG_0962.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0962.jpg"/></a></figure><figure id="bb61a7fa-029c-4917-990e-2696c398c987" class="image"><a href="media/egypt-31-01-2021/IMG_0966.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0966.jpg"/></a></figure><figure id="59763ba3-7373-4c47-a318-535c7e3a0f2c" class="image"><a href="media/egypt-31-01-2021/IMG_0973.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0973.jpg"/></a></figure><p id="46408188-3a08-4b56-bda6-1b19f1ad13d5" class="">Вот она, вот она пирамидка, прям из города видна</p><figure id="eb30ed38-90ca-4a37-abba-8ec26119588a" class="image"><a href="media/egypt-31-01-2021/IMG_0982.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0982.jpg"/></a></figure><p id="d31b4d0d-98e8-4432-9232-be3468d8950e" class="">Ну что, полезли на пирамидку</p><figure id="af433da7-b677-40e2-bd41-969f1089b303" class="image"><a href="media/egypt-31-01-2021/IMG_0998.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_0998.jpg"/></a></figure><p id="21bef6cb-1af7-49cb-8dc8-e8cc6a2cd6b3" class="">Мы там тоже среди людей лазили. А вон виден вход в пирамиду</p><figure id="b2ef7ef0-a5c2-43a8-8b3d-0d4ad7818c3b" class="image"><a href="media/egypt-31-01-2021/IMG_1007.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1007.jpg"/></a></figure><p id="6844c241-9ab4-4a65-b947-613c235176a0" class="">От первой пирамиды 5 минут ходу до второй пирамиды</p><figure id="af761e5a-46c6-4e33-be02-0d32b460b6b0" class="image"><a href="media/egypt-31-01-2021/IMG_1030.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1030.jpg"/></a></figure><figure id="1a95042e-f775-4a59-bdb0-e95ce31c71b1" class="image"><a href="media/egypt-31-01-2021/IMG_1040.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1040.jpg"/></a></figure><p id="a9e76fe3-6c16-4d2c-979c-59c579f25d31" class="">Феноменальный вид, просто потрясает ее величие</p><figure id="1da842e7-e324-4b9c-b0f4-4fd755dcd385" class="image"><a href="media/egypt-31-01-2021/IMG_1053.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1053.jpg"/></a></figure><p id="3a9e915e-d014-4d95-90bf-409c759a8c14" class="">А это небольшие пирамидки вокруг построены для родни.</p><figure id="8dd6c59b-0acf-4153-a628-578ad2f2c765" class="image"><a href="media/egypt-31-01-2021/IMG_1061.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1061.jpg"/></a></figure><p id="9299b393-2104-4412-b983-5f5cc743af31" class="">А вот и Сфинкс</p><figure id="902b45c4-20d3-4e43-b8dd-2b961db2e615" class="image"><a href="media/egypt-31-01-2021/IMG_1121.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1121.jpg"/></a></figure><p id="28c38c56-b331-4330-b12c-4415df47c1d3" class="">И жопка Сфинкса</p><figure id="273ee660-67de-4be7-8b43-092e0d566a0e" class="image"><a href="media/egypt-31-01-2021/IMG_1148.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1148.jpg"/></a></figure><p id="05b04cdd-02ec-4d58-b6b5-864805f4400d" class="">Отличный ракурс, откуда виден Сфинкс, и сразу все пирамиды</p><figure id="d794498a-2f42-457a-ae6e-0ebda91121ec" class="image"><a href="media/egypt-31-01-2021/IMG_1163.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1163.jpg"/></a></figure><p id="e22b2134-76cc-40b2-9161-0ddd7b9308ad" class="">А вот и &quot;Нил&quot;. В городе он очень мутный. Мы спрашивали есть ли тут крокодилы, то нам ответили что были, но после постройки платины они теперь не добираются до города</p><figure id="bc429667-c36e-47a5-8f98-730926762a82" class="image"><a href="media/egypt-31-01-2021/IMG_1182.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1182.jpg"/></a></figure><p id="deb84ff8-c719-4051-a8d8-884bfb7ee123" class="">Чего я тут купил, ничего не понятно 😎</p><figure id="25b536b9-2a99-4ed0-a7e5-68264ec9e2a7" class="image"><a href="media/egypt-31-01-2021/IMG_1189.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1189.jpg"/></a></figure><p id="baf75667-1c04-4b3c-96e8-ac317a6c7c9c" class="">И снова отель и его бесчисленные басейны</p><figure id="bce5e828-9f15-4721-905f-b56cd0500d76" class="image"><a href="media/egypt-31-01-2021/IMG_1201.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1201.jpg"/></a></figure><p id="f5219df3-f098-49ba-8366-4e6569864720" class="">Хорошего понемногу. Полетели домой</p><figure id="7abbaf8f-9201-43d0-92c3-4d8ec72547e2" class="image"><a href="media/egypt-31-01-2021/IMG_1218.jpg"><img style="width:4032px" src="media/egypt-31-01-2021/IMG_1218.jpg"/></a></figure></div></article></body></html>
