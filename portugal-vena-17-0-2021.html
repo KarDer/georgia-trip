@@ -1,0 +1,671 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Португалия</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3e5c2f51-d8ae-4d24-851a-ea545f6777e8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🌐</span></div><h1 class="page-title">Португалия</h1></header><div class="page-body"><p id="de317880-82a4-4bcb-bf5b-9d37c2f96285" class="">Но Португалия была не сразу, денек тусанем в Вене.</p><p id="2e02205b-027c-4c85-a354-c53a1e4f92bc" class="">
+</p><p id="9fe2bc39-4fcc-4f54-bf54-b972dfe9cb23" class="">Как вам такое разделение, канал и через стену ЖД путь.</p><figure id="d35f9e3b-2c4b-45b6-bc37-07ea67c621aa" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5966.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5966.jpg"/></a></figure><p id="53366790-bab9-4085-b850-56dc18a64703" class="">
+</p><p id="1310d37c-fc2c-460a-8dfb-5e39e2214236" class="">Уличный минипарк, кто-то на лавочке лежит, кто-то на полу сидит и музыку на ноуте пишет, кто-то есть умостившись на траве. Расслабон.</p><figure id="22ae1066-be48-4b3c-87a8-cdb8726b024f" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5968.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5968.jpg"/></a></figure><p id="647fe135-3616-44e8-b55d-74ca5bd687c9" class="">
+</p><p id="0c84ff4e-f2a1-47d1-941b-272438bab814" class="">Ну как обычно, центр города, старые дома, достопримечательности корочь.</p><figure id="7a42e891-743a-4e7f-a888-f92b2e3f7f2e" class="image">
+
+<a href="media/portugal-vena-17-0-2021/2000/IMG_5970.jpg">
+	<img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5970.jpg"/>
+</a>
+
+</figure><figure id="a8a75b83-ef2e-4c50-8e03-14b7d6d51d48" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5980.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5980.jpg"/></a></figure><figure id="42d2b6a9-51c6-4032-b8fe-c223dcdbfba6" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5983.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5983.jpg"/></a></figure><p id="f7228240-b53a-4b3d-a9eb-14406eb7e245" class="">
+</p><p id="70b99e75-c15b-47bb-b69d-d306bc3250e2" class="">Каждый не вижу смысла описывать, какие-то дворцы, памятники, красивые здания...</p><figure id="c2b6f10c-3058-45f7-ac66-6b4ab6ecadfc" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5988.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5988.jpg"/></a></figure><figure id="e2ebf9c8-9389-4787-bec8-1dd4d8fbed72" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_5997.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_5997.jpg"/></a></figure><figure id="064121c5-0e96-4c04-aa6b-7e73ddb47b0c" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6001.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6001.jpg"/></a></figure><figure id="45880bf9-5779-4254-8634-14acde5daec0" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6003.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6003.jpg"/></a></figure><p id="e1b1e849-1af6-4e68-b1bc-b5a76971db85" class="">
+</p><p id="c563ea34-aeb3-4e6c-be5e-630ad34654e3" class="">А вот это дом Моцарта, там и табличка об этом есть.</p><figure id="54c4d6e7-e23c-4ece-be67-de5732a67198" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6005.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6005.jpg"/></a></figure><p id="d50e3805-1ec6-4bde-8087-7e46dc158d95" class="">
+</p><p id="c4ffd9ab-bc88-4388-882b-ccb00d8132f9" class="">А это не музей, а музеище, тут он с наружи</p><figure id="d5c3a8d9-a611-43d5-9877-e26cfad49e3f" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6019.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6019.jpg"/></a></figure><p id="77d05324-7238-447a-b8fc-0ac8b8e575f4" class="">
+</p><p id="9c2e1b98-4048-4b90-a54e-9c4d380f1e33" class="">А тут экспонаты музея, сколько же там камней, мне кажется что в нем есть все минералы земли.</p><figure id="deaa2031-db78-49fd-b121-beac7c165b7f" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6026.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6026.jpg"/></a></figure><figure id="f7c61dd0-c3cb-483b-8c62-cbfad8866878" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6028.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6028.jpg"/></a></figure><p id="b7b8739f-4b0b-4a94-803b-829a7b461ef0" class="">
+</p><p id="b1e16a6a-47f7-4c3a-8c2a-d9abde021f5d" class="">Ну, а это самородок в 69кг. Так вот, кто-то взял и лопатой выкопал 69кг золота :)</p><figure id="7799cffc-578b-41e7-8322-8e1ca36a97ce" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6032.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6032.jpg"/></a></figure><p id="dc248608-e2f1-4559-b099-f2519b6d983b" class="">
+</p><p id="4b1d4681-8b54-440a-8009-6dbf71fd76ed" class="">Некоторые такие красивые что хочется смотреть и смотреть на них.</p><figure id="a41e3da7-2f76-428b-8660-681f98d2dba6" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6038.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6038.jpg"/></a></figure><p id="cf7c3f3e-c643-4baf-8996-33cf207f8921" class="">
+</p><p id="e80a1ed5-0838-47e8-b2e8-96f04a3d962e" class="">Ювелирочка из натуральных камней.</p><figure id="74253bdc-f0a9-4231-8f92-0d72fcf19da6" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6042.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6042.jpg"/></a></figure><p id="8279fabe-cbb6-41d2-ab62-5ba93f5d261d" class="">
+</p><p id="905ee8d8-de0d-46e6-bb6b-68e090aadc6e" class="">А тут моя рука на метеорите, метеорит в разрезе, можно сказать огроменная глыба метала.</p><figure id="d0bade9c-da5a-49ce-afc1-ff0e87e1c40d" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6049.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6049.jpg"/></a></figure><p id="3ecb22d9-377c-4dcf-8178-2abacecd78d6" class="">
+</p><p id="8fdb7a34-78dc-4443-8bb5-5512e331e629" class="">Куда же без скелетиков</p><figure id="c1ed5ec2-90eb-4ce9-9cb6-f360c3e6ba4e" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6059.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6059.jpg"/></a></figure><p id="78b53da4-22ec-49ab-9357-77d752a9d443" class="">
+</p><p id="fc3b6a49-988d-42c6-a7c8-9bbb4b4802f1" class="">Визуализация древних наших пра-пра-пра-пра-ну еще много раз пра-прадедов.</p><figure id="6c8e6021-6129-48c4-96bd-18665f875c31" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6067.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6067.jpg"/></a></figure><p id="5995c16f-c4c4-44a9-9018-cdda7dd50184" class="">
+</p><p id="277d4c80-143c-46cb-807d-9dabddb1b6b1" class="">А тут можно сфоткаться и компьютером накладывается маска, как бы я выглядел если бы жил в годы неандертальцев. </p><figure id="88cf5a5b-dd12-4b2e-b9b5-0242439059b9" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6073.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6073.jpg"/></a></figure><p id="74440825-9ae5-4b48-a848-27df9d71133d" class="">
+</p><p id="c4a9d927-81a9-4b61-95e5-bc8d7ad4c8e5" class="">И дальше погнали животинки разные, их ооочень много, но ничего супер особенного, но все в хорошем состоянии. Когда эти виды исчезнут, то будет на что посмотреть и вспомнить какие они были.</p><figure id="cb381f47-2ae0-41e2-a2aa-93de7a8c503c" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6081.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6081.jpg"/></a></figure><p id="72923731-c5db-461b-9fc3-0dabc9be4ac8" class="">
+</p><p id="a78a659d-de6b-48a8-8b0b-c70d24c3ebef" class="">Хорош уже Австрии, полетели в Португалию, тем более у нас хорошая компашка нарисовалась в самолете.</p><figure id="f5523062-ef15-46f4-8e83-5b5dfbfb463a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6095.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6095.jpg"/></a></figure><p id="3e494832-f196-4fe4-b9ea-128fb6598f4a" class="">
+</p><p id="60fe5a47-ebd2-453d-b771-108eaa8d6a5e" class="">Вечерняя прогулка по городу, приятный местный ресторанчик с суперскими бургерами и великолепными тефтельками.</p><figure id="9089acd2-a718-4076-b96b-f333a30ecc73" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6106.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6106.jpg"/></a></figure><p id="cf809b95-3bd5-4265-bbcd-dec0d9886e57" class="">
+</p><p id="ae28321d-f2b5-4e19-a014-b5998815e781" class="">Дальше снова много просто красивых зданий, памятников и т.д. бла-бла-бла.</p><figure id="bfd23026-3f0f-4593-96cd-352b088e564a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6122.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6122.jpg"/></a></figure><figure id="79e61a1f-1679-42d9-901e-1ad00e73172a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6123.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6123.jpg"/></a></figure><figure id="240c42a2-270f-43f6-9ac2-4a0ede75643e" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6134.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6134.jpg"/></a></figure><figure id="752dd3f3-074e-4c56-b078-b73e249ef0f4" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6137.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6137.jpg"/></a></figure><figure id="c767f2ef-8093-496d-8b4d-90a324c1595d" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6149.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6149.jpg"/></a></figure><figure id="6f48175d-9c42-454e-a151-869ea08628ff" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6153.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6153.jpg"/></a></figure><figure id="d0a7b0a4-b1db-4d61-8f6a-46f6877deafc" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6168.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6168.jpg"/></a></figure><figure id="820eab31-3e7b-493b-aba7-4fb0e6c166c1" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6195.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6195.jpg"/></a></figure><p id="7a7c1933-5185-44c5-b45b-4a1ddf4c6c47" class="">
+</p><p id="d373cdac-4418-4479-8e9e-b952ab0c5504" class="">А тут мы гуляем по территории старой крепости и тут просто гуляют павлины по улице, лазят по деревьям.</p><figure id="25c72d8e-c2d4-4b51-8e98-a58b7a528730" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6204.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6204.jpg"/></a></figure><figure id="dee6c767-b1b8-4386-a9a9-235efd1ac42f" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6244.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6244.jpg"/></a></figure><p id="2ad5714f-7190-4c24-961d-ea8b16ae8f0f" class="">
+</p><p id="8445c848-7875-4458-9212-2b20b9d2b49f" class="">Нашли музей посвященный мореплавателям, ну ок, в подобных еще небыли, погнали поглядим что там.</p><p id="97484b7b-cde7-412d-8463-b756eec7554c" class="">На самом деле не очень то впечатлил музей, очень много макетов кораблей, много навигационных приборов. </p><figure id="dc17130d-3082-4180-a731-40bd8ec3c3c9" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6259.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6259.jpg"/></a></figure><figure id="f1c76ccc-9b13-4d9f-8c43-f2dee529a97a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6265.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6265.jpg"/></a></figure><figure id="065aa75d-8385-42f7-a034-970440082d1e" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6266.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6266.jpg"/></a></figure><figure id="1fee525d-b3ea-4fd5-a6d1-f5628fe78497" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6267.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6267.jpg"/></a></figure><figure id="c777e27d-d79a-4ebd-ac9f-c417bf85649a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6271.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6271.jpg"/></a></figure><figure id="a42aa127-c9e4-4a5d-aed2-ebb7ba06a232" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6288.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6288.jpg"/></a></figure><p id="a4de31b2-0c3a-427b-8444-ce6689a6be70" class="">
+</p><p id="fb820ef9-1d0a-4750-9cb1-9ada7420bc68" class="">На набережной стоит вот такой интересный объект, был построен в честь какой-то даты, не суть, но ОООчень красиво 😇</p><figure id="ec23fd4b-2dc8-4242-8145-784029d1cf43" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6301.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6301.jpg"/></a></figure><p id="90e10e22-2a28-47d2-a490-3db5c0709827" class="">
+</p><p id="608b5b89-0f79-4195-9a46-1ad67e5c5083" class="">Тут у нас мыс Рока. Это самая западная часть в Европе, этим она и знаменита. А еще от сюда великолепный вид, и можно легко добраться одним автобусом. </p><figure id="71cccb09-612a-45de-9dd0-03556325a819" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6397.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6397.jpg"/></a></figure><figure id="455d78e2-f55e-4146-ac08-2b38e650b1a1" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6398.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6398.jpg"/></a></figure><p id="87e27a78-dc91-4dd7-b2fa-038517f4ea4d" class="">
+</p><p id="1dcf81d5-f709-43b4-bbce-0ca9c7afe190" class="">На обратном пути поехали через город Синтра, а там какой-то богатенький магнат заделал себе дворец с сумасшедшим садом. По нему гуляли несколько часов, что больше и не захотелось еще куда-то идти.</p><figure id="81db93e6-8404-4104-b1e3-373f457dfacf" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6426.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6426.jpg"/></a></figure><figure id="1918ce7a-591a-4b5a-9502-8db7f70641b5" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6432.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6432.jpg"/></a></figure><figure id="1654b36d-43b6-477b-96b1-61cb68513bb0" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6434.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6434.jpg"/></a></figure><figure id="7fae632c-db38-4372-bf92-8e18164f977f" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6439.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6439.jpg"/></a></figure><figure id="05ade00b-5d1e-476c-9626-0263b95afc3c" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6445.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6445.jpg"/></a></figure><figure id="105c5c9b-eb72-4c96-ad11-554678b63d88" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6454.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6454.jpg"/></a></figure><p id="6593ab01-87d8-4a07-9b57-55b95970c53c" class="">
+</p><p id="cffe065c-aa31-4143-8735-9f5d2f8b495f" class="">А вот мы приехали на пляж океана. </p><figure id="006c8691-7371-4c0a-9f25-19fe16cef60c" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6469.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6469.jpg"/></a></figure><figure id="6f4f2893-9cc7-4dea-94ff-0d076734d124" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6471.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6471.jpg"/></a></figure><figure id="bac737a6-6aef-4e3a-89be-cc7cfa6e6eb5" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6528.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6528.jpg"/></a></figure><p id="27a45ae0-b69e-45e0-bdbc-6f3a20a9ca5c" class="">
+</p><p id="73229495-9724-4dfe-af28-00f3f8b30270" class="">Просто фото из города с красивым небом.</p><figure id="decdfe00-0c86-4a9b-a820-bca397e9526e" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6539.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6539.jpg"/></a></figure><p id="a5e7d6a0-57d2-4ba4-b9f5-1f2626240cef" class="">
+</p><p id="57fcef58-dcb9-498c-8b31-b6218ccd4392" class="">А вот океанариум и разные его обитатели.</p><figure id="217cb62a-cf42-4b49-838f-0843f76955c4" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6543.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6543.jpg"/></a></figure><figure id="4a52bec2-270e-46d5-8a61-3117caa80607" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6552.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6552.jpg"/></a></figure><figure id="c17386f7-dbb5-4c10-ae36-e2b683d1b82b" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6558.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6558.jpg"/></a></figure><figure id="0db869df-86f5-4cf6-bd19-eb2e2821671a" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6565.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6565.jpg"/></a></figure><figure id="c2f29aea-344d-45dc-80fb-7c2ee530d552" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6568.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6568.jpg"/></a></figure><figure id="55275dd4-813d-4e41-a2b2-9aee6fbbfddd" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6571.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6571.jpg"/></a></figure><p id="beee9eb7-8139-4ebf-b1e7-b9d1b96bbf44" class="">
+</p><p id="648df6f7-6444-40fb-9bed-5f5483b92338" class="">Ну и последнее красивое фото парка и мы пошли на самолет 🙂</p><figure id="f0da9464-7864-4664-bbe7-f949364e67b0" class="image"><a href="media/portugal-vena-17-0-2021/2000/IMG_6583.jpg"><img style="width:900px" src="media/portugal-vena-17-0-2021/IMG_6583.jpg"/></a></figure><p id="181de621-2d5f-4b03-87b3-6bbf77992381" class="">
+</p><p id="d8347e30-ba6f-45be-8bd2-f67c28d03a25" class="">
+</p></div></article></body></html>
